@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gabarito',sans-serif;
+    background-color: beige;
+}
+.navbar{
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    cursor: pointer;
+    
+}
+.navbar__s1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header{
+    font-size: 40px;
+    font-weight: 100;
+}
+.navbar__s2{
+    display: flex;
+    gap: 50px;
+    
+}
+.navbar__s3{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/*Hero Section*/
+.hero__section{
+    margin-top: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.hero__section img{
+    width: 1100px;
+    height: 500px;
+    position: relative;
+}
+.hero__section__header{
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    color: white;
+    
+}
+.hero__section__header h1{
+    margin-bottom: 10px;
+
+
+}
+.hero__section__header button{
+    border: solid green 1px;
+    border-radius: 20px;
+    background-color: green;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    
+}
+/*features*/
+.features__header{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    cursor: pointer;
+   
+}
+.features__container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+   
+
+}
+.features__section{
+    flex-flow: 1;
+    border: solid black 2px;
+    flex-basis: 30%;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+.features__section img{
+    width: 100%;
+  height: 50%;
+}
+.features__section h1{
+    text-align: center;
+}
+.features__section p{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.features__section button{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid green 1px;
+    color: green;
+    cursor: pointer;
+
+}
+.features__section button:hover{
+    color: white;
+    background-color: green;
+}
+
+/*Product*/
+.product__header{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    cursor: pointer;
+   
+   
+}
+.product__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+   
+
+}
+.product__section{
+    
+    flex-flow: 1;
+    border: solid black 2px;
+    flex-basis: 20%;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.product__section img{
+  width: 100%;
+  height: 50%;
+}
+.product__section h1{
+    text-align: center;
+}
+.product__section p{
+    text-align: center;
+   
+}
+.product__section button{
+    border: solid green 1px;
+    color: green;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.product__section button:hover{
+    color: white;
+    background-color: green;
+}
+.farmer__section{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+   
+}
+.farmer__container h2{
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+}
+.farmer__container h1{
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+.farmer__container p{
+    text-align: center;
+
+}
+.farmer__section img{
+    width: 20%;
+    height: 30%;
+    flex-grow: 1;
+    flex-basis: 10%;
+}
+.footer{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+@media  screen and (max-width:600px) {
+    .navbar__s2{
+        display: none;
+    }
+    .product__section{
+        flex-basis: 40%;
+    }
+    .features__section{
+        flex-basis: 60%;
+       
+
+    }
+    .hero__section__header{
+        display: none;
+    }
+    .hero__section img{
+        width: 400px;
+    }
+    .features__header{
+        display: block;
+    }
+    .product__header{
+        display: block;
+    }
+}
